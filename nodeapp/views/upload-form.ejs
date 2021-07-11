@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+<form action="/store-image" method="POST" enctype="multipart/form-data">
+    <label>Store Image</label><br><br>
+    <p><%=(typeof alertMsg!='undefined')? alertMsg:''%></p>
+    <input type="file"  name="image" multiple>
+    <button type="submit">Upload</button>
+</form>
+
+</body>
+</html>
